@@ -35,7 +35,11 @@ class Settings(BaseSettings):
 
     platform_fee_percent: float = 15.0
 
-    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        extra="ignore",
+        case_sensitive=False,
+    )
 
     @property
     def cors_list(self) -> list[str]:
