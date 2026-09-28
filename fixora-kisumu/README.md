@@ -121,3 +121,4 @@ The current local validation passes 6 API tests, Python compilation, and migrati
 ## No seed data
 
 There is intentionally no production seed/demo data. The pilot should be populated with real technicians that have been verified by the trust operator.
+git branch -M main
